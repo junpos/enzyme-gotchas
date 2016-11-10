@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha -w --compilers js:babel-register ${TEST_FILES:-test/index.js}"
+    "test": "mocha --compilers js:babel-register ${TEST_FILES:-test/index.js}",
+    "tdd": "npm run test -- -w"
   },
   "author": "",
   "license": "ISC",
